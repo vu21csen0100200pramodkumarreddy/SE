@@ -10,7 +10,7 @@ def main():
             lines = file.readlines()
             time_values = list(range(0, 11))
 
-            plt.figure(figsize=(8, 6))
+            plt.figure(figsize=(10, 5))
 
             for line in lines:
                 coefficients = line.split()[:3]  # Take only the first three values

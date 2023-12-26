@@ -10,7 +10,7 @@ def main():
             lines = file.readlines()
             time_values = list(range(0, 11))
 
-            plt.figure(figsize=(8, 6))
+            plt.figure(figsize=(7, 6))
 
             for line in lines:
                 coefficients = line.split()[:3]  # Take only the first three values
@@ -23,7 +23,7 @@ def main():
             plt.xlabel('Time')
             plt.ylabel('Temperature')
             plt.grid(True)
-            plt.xlim(0, 10)
+            plt.xlim(0, 20)
             plt.legend()
             plt.show()
     except FileNotFoundError:
